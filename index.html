@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasun Anupiya - Portfolio</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="content-main">
+        <div class="profile">
+            <div class="profile-phot">
+                <img src="src/img/profile-photo.png" alt="Profile Picture">
+            </div>
+            <div class="name-area">
+                <h2>Dasun Apupiya</h2>
+                <h2>Wanasinghe</h2>
+                <hr>
+                <p> I am an undergraduate student pursuing a B.Eng.
+                    (Hons) in Instrumentation and Automation,<br>
+                    passionate about Networking, Cybersecurity, and
+                    IoT. I enjoy designing IoT systems,<br> securing
+                    networks, and exploring innovative technologies to
+                    bridge connectivity and security.<br>Eager to apply my
+                    skills to real-world challenges and stay ahead in
+                    the tech industry.</p>
+            </div>
+        </div>
+        <div class="resume">
+            <div class="ed-ex">
+            <div class="education">
+                <h3>EDUCATION</h3>
+                <dl>
+                    <dt>University of Colombo</dt>
+                    <dd>B.Eng.(Hons) in Instrumentation and Automation (Following)</dd>
+                    <dt>Cardiff Metropolitain University</dt>
+                    <dd>Higher Diploma in Network Engineering and Cybersecurity (2023-2024)</dd>
+                    <dt>Rangiri Dambulla National School</dt>
+                    <dd><table>
+                        <tr><th>GCE. Advanced Level in Technology</th><th>GCE. Ordinary Level</th></tr>
+                        <tr><td><table>
+                            <tr><td class="c1">Information and Communication Tecnology</td><td class="c2"><b>A</b></td></tr>
+                            <tr><td class="c1"> Science for Tecnology</td><td class="c2"><b>A</b></td></tr>
+                            <tr><td class="c1">Enginnering Tecnology</td><td class="c2"><b>B</b></td></tr>
+                            <tr><td class="c1">General English</td><td class="c2"><b>C</b></td></tr>
+                            <tr><td colspan="2" text-align="center">Zscore - 2.13</td></tr>
+                        </table></td><td><table>
+                            <tr><td colspan="2">Passed with six As, two Bs and one S</td></tr>
+                            <tr><td class="c1">Mathematics</td><td class="c2"><b>A</b></td></tr>
+                            <tr><td class="c1">Science</td><td class="c2"><b>A</b></td></tr>
+                            <tr><td class="c1">English</td><td class="c2"><b>A</b></td></tr>
+                            <tr><td class="c1">ICT</td><td class="c2"><b>A</b></td></tr>
+                        </table></td></tr>
+                    </table></dd>
+                </dl>
+            </div>
+            <div class="Experience">
+                <h3>EXPERIENCE</h3>
+                <dl>
+                    <dt>Freelance Software Developper</dt>
+                    <dt class="list-subtopic">Self Employed  (2023-Present)</dt>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i> Designed and developed custom web applications
+                       <br> for small medium businesses.</dd>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i> Has a Good experience in front end
+                        <br>evelopment(HTML, CSS, JS) and back end
+                        <br>development with PHP, C#, Python(Django), Java,
+                        <br>React, SQL</dd>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i> Collaborated with clients to gather requirements,
+                       <br>design prototypes, and deliver fully functional
+                        <br>software systems.</dd>
+                    <dd><i class="fa fa-check" aria-hidden="true"></i> Achieved good client ratings and reviews by
+                        <br>dilivering project on time.</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="sk-con">
+            <iframe id="targetFrame"></iframe>
+        </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <ul class="contact-list">
+            <li><i class="fa fa-phone-square" aria-hidden="true"></i><a href="#">+94 76 887 5438</a></li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="go2dax@proton.me">go2dax@proton.me</a></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Pahalawewa, Dambulla.</a></li>
+            <li><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/dasun-anupiya-71b64b229/">Linkedin</a></li>
+            <li><i class="fa fa-facebook-square" aria-hidden="true"></i><a href="https://www.facebook.com/dasun.anupiya.3">FaceBook</a></li>
+            <li><i class="fa fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/dasun_anupiya_/">Instagram</a></li>
+            <li><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="https://x.com/AnupiyaDasun">X</a></li>
+            <li><i class="fa fa-github-square" aria-hidden="true"></i><a href="#">Git Hub</a></li>
+        </ul>
+        <div class="a-links">
+            <h4>Additional Links</h4>
+        <ul>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="#">Follow</a></li>
+        </ul>
+    </div>
+    </div>
+    <script>
+        const iframe = document.getElementById('targetFrame');
+        iframe.src = 'Skills.html';
+    
+        iframe.onload = function () {
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            const content = iframeDocument.querySelector('.Skills');
+            iframeDocument.body.innerHTML = '';
+            iframeDocument.body.appendChild(content.cloneNode(true));
+        };
+    </script>
+</body>
+</html>

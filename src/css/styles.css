@@ -1,0 +1,236 @@
+/*** IN PROGRESS ***/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+	--c1: #FFD12F;
+	--b2: #222;
+	--b3: #333;
+	--w1: #fff;
+	--w2: #eee;
+	--t1: all 0.5s ease 0s;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/bgweb.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+.content{
+    margin: 20,20,20,20;
+    padding: 0;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    position: relative;
+}
+
+.profile-phot img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
+.name-area {
+    margin-left: 20px;
+    max-width: 60%;
+}
+
+.name-area h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.name-area p {
+    margin: 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: max-height 0.3s, white-space 0.3s, overflow 0.3s;
+    max-height: 50px;
+}
+
+.name-area:hover p {
+    max-height: 100%;
+    white-space: normal;
+    overflow: visible;   
+}
+.resume{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%-150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+dl dt{
+    font-weight: bold;
+    font-size: 14pt;
+}
+dl dd{
+    font-size: 12pt;
+}
+dl dd table .c1{
+    text-align: right;
+}
+dl dd table .c2{
+    text-align: left;
+}
+dl dd table td{
+    border-bottom: #333 1px solid;
+}
+.education{
+    margin-left: 20px;
+    padding: 0;
+}
+.education dl {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-left: 5px solid transparent;
+    padding-left: 0;
+    transition: all 0.5s ease;
+}
+
+.education h3 {
+    font-size: 36pt;
+    cursor: pointer;
+}
+
+.education h3:hover + dl {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100%;
+    border-left-color: #FFD12F;
+    padding-left: 10px;
+}
+
+.Experience{
+    margin-left: 20px;
+    padding: 0;
+}
+.Experience dl {
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-left: 5px solid transparent;
+    padding-left: 0;
+    transition: all 0.5s ease;
+}
+
+
+.Experience h3 {
+    font-size: 36pt;
+    cursor: pointer;
+}
+
+.Experience h3:hover + dl {
+    visibility: visible;
+    opacity: 1;
+    max-height: 100%;
+    border-left-color: #FFD12F;
+    padding-left: 10px;
+}
+
+.Skills{
+    display: absolute;
+    margin-left: 100px;
+}
+
+.Footer{
+    background-color: #111;
+    color: #eee;
+    width: 100%;
+}
+
+.Footer ul{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+}
+.Footer ul li{
+    margin-left: 10px;
+    font-size: 12pt;
+    color: #eee;
+}
+.Footer ul li i{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+.Footer ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #eee;
+}
+.a-links{
+    margin-left: 50px;
+}
+.a-links{
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+}
+.a-links ul{
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    color: #eee;
+}
+.a-links ul li{
+    margin-left: 10px;
+    font-size: 12pt;
+    color: #eee;
+}
+
+.a-links ul li a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #eee;
+}
+
+.Footer a:hover{
+    color: #FFD12F;
+}
+.sk-con iframe{
+    border: none;
+    height: 550px;
+    width: 550px;
+    border: none;
+    overflow: scroll;
+    scrollbar-width: 0;
+}
+
+iframe::-webkit-scrollbar {
+    display: none; 
+}
